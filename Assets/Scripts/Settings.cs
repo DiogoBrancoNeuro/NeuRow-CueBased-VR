@@ -52,7 +52,7 @@ public class Settings : MonoBehaviour
 	public static bool stimL;
 	public static bool points;
 	public static bool percentage;
-	public static bool flash = true;
+	public static bool flash = false;
 	public static bool blackwhite = true;
 	public static bool redgray;
 	//public static bool flash = false;	// change to true for default SSVEP
