@@ -14,7 +14,7 @@ public class RotateBrush : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        velocity = 30;
         OriginalRotation = GetComponent<Transform>().rotation.eulerAngles;
         
 
@@ -28,10 +28,7 @@ public class RotateBrush : MonoBehaviour
         
         transform.Rotate(Rotating);
         
-        if (OriginalRotation == LastRotationPosition)
-        {
-            Debug.Log("Trigger");
-        }
+        
         
 
         // Send a trigger to the eeg, everytime the brush touches the hand.
