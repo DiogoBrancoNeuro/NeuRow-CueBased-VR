@@ -1,5 +1,96 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3242289767803960336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8362123149499576746}
+  - component: {fileID: 7940310469137310119}
+  - component: {fileID: 4824147199430871748}
+  - component: {fileID: 7324286275277861125}
+  m_Layer: 12
+  m_Name: CollisionObject (1)
+  m_TagString: CollisionObjectTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8362123149499576746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3242289767803960336}
+  m_LocalRotation: {x: 0.05254439, y: -0.053508107, z: -0.5659237, w: 0.82103986}
+  m_LocalPosition: {x: -0.0049, y: 0.1987, z: -0.0251}
+  m_LocalScale: {x: 0.046912596, y: 0.046913728, z: 0.04691205}
+  m_Children: []
+  m_Father: {fileID: 6234052010739493828}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7940310469137310119
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3242289767803960336}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4824147199430871748
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3242289767803960336}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &7324286275277861125
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3242289767803960336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6234052009833058604
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,9 +103,9 @@ GameObject:
   - component: {fileID: 6234052009833058592}
   - component: {fileID: 6234052009833058593}
   - component: {fileID: 6234052009833058594}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Brush
-  m_TagString: Untagged
+  m_TagString: Brush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +119,7 @@ Transform:
   m_GameObject: {fileID: 6234052009833058604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.75, y: -0.047, z: -0}
-  m_LocalScale: {x: 1, y: 1.6238, z: -0.028928}
+  m_LocalScale: {x: 2.90743, y: 1.6238, z: -0.028928}
   m_Children: []
   m_Father: {fileID: 6234052010599246923}
   m_RootOrder: 0
@@ -104,9 +195,11 @@ GameObject:
   - component: {fileID: 6234052010599246920}
   - component: {fileID: 6234052010599246921}
   - component: {fileID: 6234052010599246922}
-  m_Layer: 0
+  - component: {fileID: 5761949064005205150}
+  - component: {fileID: 1049010561964230190}
+  m_Layer: 11
   m_Name: GripBrush
-  m_TagString: Untagged
+  m_TagString: Brush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,8 +291,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BrushPosition: {x: 0, y: 0, z: 0}
-  velocity: 100000
+  velocity: 60
   Brush: {fileID: 0}
+  a: 0
+  OriginalRotation: {x: 0, y: 0, z: 0}
+  Rotating: {x: 0, y: 0, z: 0}
+  LastRotationPosition: {x: 0, y: 0, z: 0}
+--- !u!54 &5761949064005205150
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6234052010599246964}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1049010561964230190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6234052010599246964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 719d6858cb43eb14d9d54601df9bd807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionobject: {fileID: 0}
+  a: 0
 --- !u!1 &6234052010739493829
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,9 +336,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6234052010739493828}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LeftGrip
-  m_TagString: Untagged
+  m_TagString: Brush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -223,16 +350,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6234052010739493829}
-  m_LocalRotation: {x: -0.03837565, y: 0.0011543931, z: -0.00006658605, w: 0.99926275}
+  m_LocalRotation: {x: -0.038379144, y: 0.0011553867, z: -0.00006884936, w: 0.99926263}
   m_LocalPosition: {x: -0.0016374483, y: 0.020216346, z: 0.0035482442}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6234052011650960883}
   - {fileID: 6234052010599246923}
   - {fileID: 6234052011874251513}
+  - {fileID: 8362123149499576746}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -4.399, y: 0.133, z: -0.013}
 --- !u!1 &6234052011650960892
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,9 +373,9 @@ GameObject:
   - component: {fileID: 6234052011650960880}
   - component: {fileID: 6234052011650960881}
   - component: {fileID: 6234052011650960882}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GripPart
-  m_TagString: Untagged
+  m_TagString: Brush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -337,9 +465,9 @@ GameObject:
   - component: {fileID: 6234052011874251518}
   - component: {fileID: 6234052011874251519}
   - component: {fileID: 6234052011874251512}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GripPart
-  m_TagString: Untagged
+  m_TagString: Brush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
