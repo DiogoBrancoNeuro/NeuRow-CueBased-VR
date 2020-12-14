@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateBrush : MonoBehaviour
+public class RotateBrushLeft : MonoBehaviour
 {
     public Vector3 BrushPosition;
     public float velocity=60;
@@ -11,11 +11,12 @@ public class RotateBrush : MonoBehaviour
     public Vector3 OriginalRotation;
     public Vector3 Rotating;
     public Vector3 LastRotationPosition;
-    
+
+    public GameObject LeftGripHand;
     // Start is called before the first frame update
     void Start()
     {
-        
+        LeftGripHand = GameObject.Find("LeftGrip");
         velocity = 30;
         OriginalRotation = GetComponent<Transform>().rotation.eulerAngles;
         Rotating = Vector3.up * Time.deltaTime * velocity;

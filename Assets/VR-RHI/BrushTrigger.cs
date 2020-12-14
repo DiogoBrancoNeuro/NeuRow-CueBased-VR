@@ -7,9 +7,10 @@ public class BrushTrigger : MonoBehaviour
     public GameObject collisionobject;
     public int a;
     GameObject tcp;
+    public GameObject LeftGripHand;
     public void Start()
     {
-        
+        LeftGripHand = GameObject.FindGameObjectWithTag("BrushLeft");
         tcp = GameObject.Find("TCP");
         
 
@@ -22,8 +23,15 @@ public class BrushTrigger : MonoBehaviour
             Debug.Log("TriggerCollision");
             tcp.GetComponent<TCPTestClientPython>().clientMessage = "100";
             tcp.GetComponent<TCPTestClientPython>().SendMessage();
-            
+            gameObject.GetComponent<RotateBrush>().RotationPosition("0");
+            LeftGripHand.GetComponent<RotateBrushLeft>().RotationPosition("0");
 
+        }
+        else if (other.gameObject.tag == "CollisionObjectDown")
+        {
+            Debug.Log("Collision");
+            gameObject.GetComponent<RotateBrush>().RotationPosition("1");
+            LeftGripHand.GetComponent<RotateBrushLeft>().RotationPosition("1");
         }
     }
     IEnumerable ResetServoPosition()

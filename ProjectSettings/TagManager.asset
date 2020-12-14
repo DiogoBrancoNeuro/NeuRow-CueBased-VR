@@ -25,6 +25,8 @@ TagManager:
   - CollisionObjectTrigger
   - Brush
   - BrushRight
+  - CollisionObjectDown
+  - BrushLeft
   layers:
   - Default
   - TransparentFX
