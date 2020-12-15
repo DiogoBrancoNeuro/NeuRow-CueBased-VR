@@ -35,11 +35,11 @@ public class RotateBrushLeft : MonoBehaviour
                 Rotating = Vector3.up * Time.deltaTime * velocity;
                 break;
         }
-        Update();
+        FixedUpdate();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
         
