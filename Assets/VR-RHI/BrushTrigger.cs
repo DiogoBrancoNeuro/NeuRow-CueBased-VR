@@ -41,7 +41,8 @@ public class BrushTrigger : MonoBehaviour
         }
         else if (other.gameObject.tag == "TriggerServo")
         {
-            if (TriggersList[0] == "TriggerCollision")
+            Debug.Log("TriggersList: " + TriggersList[0]);
+            if (TriggersList[0] == "CollisionObjectTrigger")
             {
                 tcp.GetComponent<TCPTestClientPython>().clientMessage = "180";
                 tcp.GetComponent<TCPTestClientPython>().SendMessage();

@@ -16,7 +16,7 @@ public class RotateBrush : MonoBehaviour
     void Start()
     {
         
-        velocity = 30;
+        velocity = 29;
         OriginalRotation = GetComponent<Transform>().rotation.eulerAngles;
         Rotating = Vector3.up * Time.deltaTime * velocity;
 
