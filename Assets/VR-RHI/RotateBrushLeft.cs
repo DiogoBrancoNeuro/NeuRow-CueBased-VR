@@ -17,7 +17,7 @@ public class RotateBrushLeft : MonoBehaviour
     void Start()
     {
         LeftGripHand = GameObject.Find("LeftGrip");
-        velocity = 30;
+        velocity = 60;
         OriginalRotation = GetComponent<Transform>().rotation.eulerAngles;
         Rotating = Vector3.up * Time.deltaTime * velocity;
 
