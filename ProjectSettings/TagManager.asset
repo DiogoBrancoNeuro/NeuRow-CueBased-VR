@@ -28,6 +28,8 @@ TagManager:
   - CollisionObjectDown
   - BrushLeft
   - TriggerServo
+  - BrushLeftFemale
+  - BrushLeftMale
   layers:
   - Default
   - TransparentFX

@@ -96,14 +96,16 @@ public class Settings : MonoBehaviour
 		lFemaleHand = GameObject.Find("LeftHandFemale");
 		Settings.Instance.rFemaleHand.SetActive(false);
 		Settings.Instance.lFemaleHand.SetActive(false);
-		
-		arrowLFr = GameObject.Find("arrowLFr");
+        
+
+
+        arrowLFr = GameObject.Find("arrowLFr");
 		arrowRFr = GameObject.Find("arrowRFr");
 		arrowLFb = GameObject.Find("arrowLFb");
 		arrowRFb = GameObject.Find("arrowRFb");
 		arrowBg = GameObject.Find("arrowBg");
 		arrowBw = GameObject.Find("arrowBw");
-
+        
 
 		scoregui.SetActive (false);
 		traininggui.SetActive (false);

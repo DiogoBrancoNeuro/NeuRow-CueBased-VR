@@ -16,7 +16,7 @@ public class RotateBrushLeft : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LeftGripHand = GameObject.Find("LeftGrip");
+        //LeftGripHand = GameObject.Find("LeftGrip");
         velocity = 60;
         OriginalRotation = GetComponent<Transform>().rotation.eulerAngles;
         Rotating = Vector3.up * Time.deltaTime * velocity;

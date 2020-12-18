@@ -8,12 +8,14 @@ public class BrushTrigger : MonoBehaviour
     public GameObject collisionobject;
     public int a;
     GameObject tcp;
-    public GameObject LeftGripHand;
+    public GameObject LeftGripHandFemale;
+    public GameObject LeftGripHandMale;
     public List<string> TriggersList;
 
     public void Start()
     {
-        LeftGripHand = GameObject.FindGameObjectWithTag("BrushLeft");
+        LeftGripHandFemale = GameObject.FindGameObjectWithTag("BrushLeftFemale");
+        LeftGripHandMale = GameObject.FindGameObjectWithTag("BrushLeftMale");
         tcp = GameObject.Find("TCP");
 
 
@@ -33,7 +35,8 @@ public class BrushTrigger : MonoBehaviour
             tcp.GetComponent<TCPTestClientPython>().clientMessage = "90";
             tcp.GetComponent<TCPTestClientPython>().SendMessage();
             gameObject.GetComponent<RotateBrush>().RotationPosition("0");
-            LeftGripHand.GetComponent<RotateBrushLeft>().RotationPosition("0");
+            LeftGripHandFemale.GetComponent<RotateBrushLeft>().RotationPosition("0");
+            LeftGripHandMale.GetComponent<RotateBrushLeft>().RotationPosition("0");
             TriggersList.Add(other.gameObject.tag);
 
         }
@@ -48,7 +51,8 @@ public class BrushTrigger : MonoBehaviour
             tcp.GetComponent<TCPTestClientPython>().clientMessage = "90";
             tcp.GetComponent<TCPTestClientPython>().SendMessage();
             gameObject.GetComponent<RotateBrush>().RotationPosition("1");
-            LeftGripHand.GetComponent<RotateBrushLeft>().RotationPosition("1");
+            LeftGripHandFemale.GetComponent<RotateBrushLeft>().RotationPosition("1");
+            LeftGripHandMale.GetComponent<RotateBrushLeft>().RotationPosition("1");
             TriggersList.Add(other.gameObject.tag);
         }
         else if (other.gameObject.tag == "TriggerServo")
